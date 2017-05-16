@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StreamSoup Friend Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../streamstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+            .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+            .fa-anchor,.fa-coffee {font-size:200px}
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="review.js"></script>
+    </head>
+    
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-opennav w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="../index.html"                      class="w3-bar-item w3-button w3-padding-large w3-white">StreamSoup</a>
+                <a href="../ShowPage/show.html"          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find A Show</a>
+                <a href="../UserPage/user.html"              class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Users</a>
+                <a href="../ReviewPage/review.html"          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Reviews</a>
+                <a href="../FriendPage/friend.html"          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Friends</a>
+                <a href="../CompareFriendsPage/compare.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Compare Users</a>
+                <a href="../StatisticsPage/statistics.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">User Statistics</a>                
+            </div>
+        </div>
+        
+        <header id="queries" class="w3-white w3-left-align w3-large w3-padding-64">
+            <div id="insert-section" class="w3-margin w3-padding-8 w3-red w3-round-xlarge w3-card-8">
+                <div id="insert-title" class="w3-button w3-margin w3-white w3-round-xlarge w3-padding-8">Insert a Review</div>
+                <div id="insert-panel" class="w3-margin">
+                    <form id="insert-form">
+                        <label>Username</label>
+                        <input type="text" id="insert-name" class="w3-input">
+                        <label>Show Name</label>
+                        <input type="text" id="insert-show" class="w3-input">
+                        <label>Text Review</label>
+                        <textarea name="message" rows="5" id="insert-text" class="w3-input"></textarea>
+                        <br>
+                        <label>Number Rating</label>
+                        <input list="insert-rate-datalist" id="insert-rate" type="text">
+                        <datalist id="insert-rate-datalist">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>`
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+                        <br>
+                        <input type="submit" value="Submit" class="w3-button w3-black">
+                    </form>
+                    <div id="insert-result" class="w3-panel w3-margin w3-black">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>StreamSoup Homepage</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="streamstyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-opennav w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html"                      class="w3-bar-item w3-button w3-padding-large w3-white">StreamSoup</a>
+                <a href="ShowPage/show.html"          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find A Show</a>
+                <a href="UserPage/user.html"              class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Users</a>
+                <a href="ReviewPage/review.html"          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Reviews</a>
+                <a href="FriendPage/friend.html"          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Friends</a>
+                <a href="CompareFriendsPage/compare.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Compare Users</a>
+                <a href="StatisticsPage/statistics.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">User Statistics</a>                
+            </div>
+        </div>
+
+
+<!-- Header -->
+<header class="w3-container w3-black w3-center w3-padding-128">
+  <img src = "./logo.png">
+  <h1 class="w3-margin w3-jumbo">StreamSoup</h1>
+  <p class="w3-xlarge">What are you watching tonight?</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>StreamSoup</h1>
+      <h5 class="w3-padding-32">What should I watch tonight? Is that on Netflix? Who's in it? Is it any good? Have my friends seen it? Did they like it? </h5>
+
+<h5> Watching TV isn't supposed to be this hard. Leave the answers to those questions to us, all you have to do is enjoy. StreamSoup - all your television needs in one place. </h5>
+
+      <p class="w3-text-grey">Stream Soup is an application that aims to help users by recommending TV shows based on the streaming services they use, their previously watched shows and their general entertainment preferences. The problem Stream Soup is attempting to solve is the disconnect between different streaming services and the content that they provide. A user should be able to simply check Stream Soup to find new/existing TV shows as opposed to logging in to several streaming websites such as Netflix, Hulu, Amazon Prime Video, Crunchyroll, HBO etc. </p>
+    </div>
+
+    <div class="w3-third w3-center">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
